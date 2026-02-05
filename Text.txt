@@ -1,0 +1,31 @@
+import java.awt.*; 
+import java.applet.*; 
+ 
+/*
+<applet code="ParameterPassing" width=400 height=500>
+<param name="Name" value="Roger">
+<param name="Age" value="26">
+<param name="Sport" value="Tennis">
+<param name="Food" value="Pasta">
+<param name="Fruit" value="Apple">
+<param name="Destination" value="California">
+</applet>
+*/
+ 
+public class ParameterPassing extends Applet 
+{
+ String name;
+ String age;
+ String sport;
+ String food;
+ String fruit;
+ String destination;
+public void init()
+{
+ name = getParameter("Name");
+ age = getParameter("Age");
+ sport = getParameter("Sport");
+ food = getParameter("Food");
+ fruit = getParameter("Fruit");
+ destination = getParameter("Destination");
+}
